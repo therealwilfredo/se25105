@@ -5,6 +5,51 @@
     <title>Title</title>
 </head>
 <body>
+    <div id="mainDiv">
+      <input type="text" id="myNo1"/> +
+      <input type="text" id="myNo2" />
+      <input type="button" id="addValues" value="Add" />
+    </div>
+<div id="results">
+
+</div>
 
 </body>
+<script type="text/javascript">
+    var addButton = document.getElementById("addValues");
+    addButton.onclick = function(e) {
+        no1 = parseInt(document.getElementById("myNo1").value);
+        no2 = parseInt(document.getElementById("myNo2").value);
+        addNumbers = no1 + no2;
+        if (isNan(addNumbers) ) {
+            alert("No Bueno");
+        } else (
+                var result = document.getElementById("result");
+                result.innerHTML = addNumbers;
+        )
+    }
+
+    var result = document.getElementById("result");
+    result.innerHTML = "TEST";
+    console.log(result);
+
+    const N = 10;
+    var a = [];
+    for (i=0; i<N; i++) {
+        a[i] = [];
+        for (j=0; j<N; j++) {
+            a[i][j] = i + "," + j;
+        }
+    }
+    var str = "<table cellpadding='5' cellspacing='5' >";
+    for (i=0; i<N; i++) {
+        str += "<tr>";
+        for (j=0; j<N; j++) {
+            str += "<td>" + a[i][j] + "</td>";
+        }
+        str += "</tr>";
+    }
+    str += "</table>";
+    result.innerHTML = str;
+</script>
 </html>
