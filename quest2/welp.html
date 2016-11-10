@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="r5.css">
+<head>
+<script type="text/javascript">
+function genDivs(v) {
+        document.getElementById("code").innerHTML = "";
+        var randomNumbers = generateRandomNumbers(v);
+        for (var i = 0; i < v; i++) {
+            var row = document.createElement("div");
+            row.className = "row";
+            for (var x = 1; x <= v; x++) {
+                var cell = document.createElement("div");
+                cell.className = "gridsquare";
+                cell.innerHTML = randomNumbers.pop();
+                row.appendChild(cell);
+            }
+            document.getElementById("code").appendChild(row);
+        }
+    }
+    function generateRandomNumbers(number) {
+        var randomNumbers = number * number;
+        var arr = [];
+        while(arr.length < randomNumbers){
+            var randomnumber=Math.ceil(Math.random()*randomNumbers);
+            var found=false;
+            for(var i=0;i<arr.length;i++){
+                if(arr[i]==randomnumber){found=true;break}
+            }
+            if(!found)arr[arr.length]=randomnumber;
+        }
+        return arr;
+    }
+ </script> 
+ </head>
+<body>
+  <input type="button" onclick="genDivs(5)" value="Generate Grid!"> 
+  <div id="container"></div>
+  <code id="code"></code>
+</body> 
+</html>
