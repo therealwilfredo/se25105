@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Actor</title>
+    <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<script>
+ function clickCounter() {
+    if(typeof(Storage) !== "undefined") {
+        if (localStorage.actorinfo) {
+            localStorage.actorinfo = Number(localStorage.actorinfo)+1;
+        } else {
+            localStorage.actorinfo = 1;
+        }
+        document.getElementById("result").innerHTML = "You have Added the actor" + localStorage.actorinfo + " time(s).";
+    } else {
+        document.getElementById("result").innerHTML = "Actor Added";
+    } 
+	
+}
+
+ JSON.parse('first name');             
+JSON.parse('last name');            
+JSON.parse('"gender"');         
+JSON.parse('genre'); 
+JSON.parse('age');   
+
+function checkInp()
+{
+var x=document.forms["myForm"]["age"]["firstname"]["lastname"]["gender"]["genre"].value;
+if (x consists of any letters) // this is the code I need to change
+{
+alert("Must input numbers");
+return false;
+}
+}
+</script>
+<body>
+<div class="container">
+    <h3>Create an Actor</h3>
+
+    <form action="actors.text">
+First name: <input type="text" name="FirstName" value=""><br>
+Last name: <input type="text" name="LastName" value="" ><br>
+Actor Gender <input type="text" name="Gender"value="" ><br>
+Actor Genre<input type="text" name="Genre" value=""><br>
+Actor Age <input type="text" name="Age" value=""><br>
+<input type="submit" value="Submit">
+
+</form>
+	
+	<form>
+	
+	<p> Confirmed Screen
+	
+	<input type="submit" value="submitted">
+	
+	</p>
+	
+	<p> Actors Information 
+	
+	<button onclick="Edit Actor()" type="button">Edit Actor Information!</button>
+	
+	</p>
+	<p> Delete Actor 
+	
+	<button onclick="Delete()" type="button">Delete Actor</button>
+	
+	</p>
+</div>
+</body>
+</html>
