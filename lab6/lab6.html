@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Actor</title>
+    <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<script>
+ function calculateArea() {
+    var base = document.input.width.value;
+    var height = document.input.height.value;
+    var out = (1/2) * parseFloat(base) * parseFloat(height);
+
+    document.input.output.value = out;
+}
+</script>
+<body>
+<div class="container">
+    <h3>Create an Actor</h3>
+
+    <form>
+        <p>
+            <label>Actor Age</label>
+            <input type="textbox" id="content">
+        </p>
+        <p>
+            <label>Sex</label>
+            <input type="textbox" id="content">
+              
+        </p>
+        <p>
+            <label>Actor First Name</label>
+            <input type="textbox" id="content">
+        </p>
+		<p>
+            <label>Actor Last Name</label>
+            <input type="textbox" id="content">
+        </p>
+        <p>
+            <label>Type genre:</label>
+        <input type="textbox" id="content">
+                
+            
+        </p>
+        <p>
+            <input type="button" id="content" value="Add">
+        </p>
+    </form>
+	
+	<label for="output">OutPut for Actor </label><input type="textbox" name="content"></input>
+</div>
+</body>
+</html>
