@@ -1,0 +1,214 @@
+<html>
+
+<head>
+
+<script language="JavaScript">
+<!-- Hide from old browsers
+
+
+function quiz(form) {
+var i = 0
+var result1=document.form1.answer1.selectedIndex
+var result2=document.form2.answer2.selectedIndex
+var result3=document.form3.answer3.selectedIndex
+var result4=document.form4.answer4.selectedIndex
+var result5=document.form5.answer5.selectedIndex
+var result6=document.form6.answer6.selectedIndex
+var result7=document.form7.answer7.selectedIndex
+var result8=document.form8.answer8.selectedIndex
+var result9=document.form9.answer9.selectedIndex
+var result10=document.form10.answer10.selectedIndex
+// Addition #1 Goes Here
+
+if (result1==0){
+alert("Question #1 was not answered");}
+if (result2==0){
+alert("Question #2 was not answered");}
+if (result3==0){
+alert("Question #3 was not answered");}
+if (result4==0){
+alert("Question #4 was not answered");}
+if (result5==0){
+alert("Question #5 was not answered");}
+if (result6==0){
+alert("Question #6 was not answered");}
+if (result7==0){
+alert("Question #7 was not answered");}
+if (result8==0){
+alert("Question #8 was not answered");}
+if (result9==0){
+alert("Question #9 was not answered");}
+if (result10==0){
+alert("Question #10 was not answered");}
+// Addition #2 Goes Here
+
+
+else {
+if (result1==1){i++} // In form1 the correct answer is the third OPTION VALUE
+if (result2==3){i++} // In form2 the correct answer is the second OPTION VALUE
+if (result3==4){i++} // In form3 the correct answer is the second OPTION VALUE
+if (result4==1){i++} // In form4 the correct answer is the third OPTION VALUE
+if (result5==2){i++} // In form5 the correct answer is the first OPTION VALUE
+if (result6==2){i++} // In form6 the correct answer is the fourth OPTION VALUE
+if (result7==2){i++} // In form7 the correct answer is the first OPTION VALUE
+if (result8==1){i++} // In form8 the correct answer is the second OPTION VALUE
+if (result9==1){i++} // In form9 the correct answer is the fourth OPTION VALUE
+if (result10==3){i++} // In form10 the correct answer is the third OPTION VALUE
+// Addition #3 Goes Here
+
+document.total.score.value = i
+var per = Math.round((i / 10) * 100) // Addition #5 Goes Here (change the number "3")
+document.total.percent.value = per 
+
+if (result1 != 1){ // In form1 the correct answer is the third OPTION VALUE
+document.form1.check1.checked = true}
+else {document.form1.check1.checked = false}
+if (result2 != 3){ // In form2 the correct answer is the second OPTION VALUE
+document.form2.check2.checked = true}
+else {document.form2.check2.checked = false}
+if (result3 != 4){ // In form3 the correct answer is the second OPTION VALUE
+document.form3.check3.checked = true}
+else {document.form3.check3.checked = false}
+if (result4 != 1){ // In form4 the correct answer is the third OPTION VALUE
+document.form4.check4.checked = true}
+else {document.form4.check4.checked = false}
+if (result5 != 2){ // In form5 the correct answer is the first OPTION VALUE
+document.form5.check5.checked = true}
+else {document.form5.check5.checked = false}
+if (result6 != 2){ // In form6 the correct answer is the fourth OPTION VALUE
+document.form6.check6.checked = true}
+else {document.form6.check6.checked = false}
+if (result7 != 2){ // In form7 the correct answer is the first OPTION VALUE
+document.form7.check7.checked = true}
+else {document.form7.check7.checked = false}
+if (result8 != 1){ // In form8 the correct answer is the second OPTION VALUE
+document.form8.check8.checked = true}
+else {document.form8.check8.checked = false}
+if (result9 != 1){ // In form9 the correct answer is the fourth OPTION VALUE
+document.form9.check9.checked = true}
+else {document.form9.check9.checked = false}
+if (result10 != 3){ // In form10 the correct answer is the third OPTION VALUE
+document.form10.check10.checked = true}
+else {document.form10.check10.checked = false}
+
+
+
+
+
+
+
+
+// Addition #4 Goes Here
+}
+}
+//-->
+</SCRIPT>
+
+</head>
+
+<body>
+
+<FORM NAME="form1"><INPUT TYPE="CHECKBOX" NAME="check1" value="ON"> 
+<STRONG>QUESTION #1: 5 * 3</STRONG>
+<SELECT NAME="answer1" SIZE=1>
+<OPTION SELECTED VALUE="0">-- Choose an answer --
+<OPTION VALUE="1">15
+<OPTION VALUE="2">20
+<OPTION VALUE="3">7
+<OPTION VALUE="4">8
+</SELECT></FORM>
+<FORM NAME="form2"><INPUT TYPE="CHECKBOX" NAME="check2" value="ON"> 
+<STRONG>QUESTION #2: 10 + 3</STRONG>
+<SELECT NAME="answer2" SIZE=1>
+<OPTION SELECTED VALUE="0">-- Choose an answer --
+<OPTION VALUE="1">16
+<OPTION VALUE="2">7
+<OPTION VALUE="3">13
+<OPTION VALUE="4">0
+</SELECT></FORM>
+<FORM NAME="form3"><INPUT TYPE="CHECKBOX" NAME="check3" value="ON"> 
+<STRONG>QUESTION #3: 9/3</STRONG>
+<SELECT NAME="answer3" SIZE=1>
+<OPTION SELECTED VALUE="0">-- Choose an answer --
+<OPTION VALUE="1">0
+<OPTION VALUE="2">8
+<OPTION VALUE="3">9
+<OPTION VALUE="4">3
+</SELECT></FORM>
+<FORM NAME="form4"><INPUT TYPE="CHECKBOX" NAME="check4" value="ON"> 
+<STRONG>QUESTION #4: 12 *12?</STRONG>
+<SELECT NAME="answer4" SIZE=1>
+<OPTION SELECTED VALUE="0">-- Choose an answer --
+<OPTION VALUE="1">144
+<OPTION VALUE="2">12
+<OPTION VALUE="3">200
+<OPTION VALUE="4">9
+</SELECT></FORM>
+<FORM NAME="form5"><INPUT TYPE="CHECKBOX" NAME="check5" value="ON"> 
+<STRONG>QUESTION #5: 10 * 10</STRONG>
+<SELECT NAME="answer5" SIZE=1>
+<OPTION SELECTED VALUE="0">-- Choose an answer --
+<OPTION VALUE="1">100
+<OPTION VALUE="2">1
+<OPTION VALUE="3">0
+<OPTION VALUE="4">50
+</SELECT></FORM>
+<FORM NAME="form6"><INPUT TYPE="CHECKBOX" NAME="check6" value="ON"> 
+<STRONG>QUESTION #6: 1000/10</STRONG>
+<SELECT NAME="answer6" SIZE=1>
+<OPTION SELECTED VALUE="0">-- Choose an answer --
+<OPTION VALUE="1">10
+<OPTION VALUE="2">100
+<OPTION VALUE="3">1
+<OPTION VALUE="4">0
+</SELECT></FORM>
+<FORM NAME="form7"><INPUT TYPE="CHECKBOX" NAME="check7" value="ON"> 
+<STRONG>QUESTION #7: 50/5</STRONG>
+<SELECT NAME="answer7" SIZE=1>
+<OPTION SELECTED VALUE="0">-- Choose an answer --
+<OPTION VALUE="1">5
+<OPTION VALUE="2">10
+<OPTION VALUE="3">20
+<OPTION VALUE="4">25
+</SELECT></FORM>
+<FORM NAME="form8"><INPUT TYPE="CHECKBOX" NAME="check8" value="ON"> 
+<STRONG>QUESTION #8: 0 * 0</STRONG>
+<SELECT NAME="answer8" SIZE=1>
+<OPTION SELECTED VALUE="0">-- Choose an answer --
+<OPTION VALUE="1">0
+<OPTION VALUE="2">1
+<OPTION VALUE="3">5
+<OPTION VALUE="4">10
+</SELECT></FORM>
+<FORM NAME="form9"><INPUT TYPE="CHECKBOX" NAME="check9" value="ON"> 
+<STRONG>QUESTION #9: 6* 5</STRONG>
+<SELECT NAME="answer9" SIZE=1>
+<OPTION SELECTED VALUE="0">-- Choose an answer --
+<OPTION VALUE="1">30
+<OPTION VALUE="2">0
+<OPTION VALUE="3">6
+<OPTION VALUE="4">2
+</SELECT></FORM>
+<FORM NAME="form10"><INPUT TYPE="CHECKBOX" NAME="check10" value="ON"> 
+<STRONG>QUESTION #10: 4 * 0</STRONG>
+<SELECT NAME="answer10" SIZE=1>
+<OPTION SELECTED VALUE="0">-- Choose an answer --
+<OPTION VALUE="1">4
+<OPTION VALUE="2">1
+<OPTION VALUE="3">0
+<OPTION VALUE="4">5
+</SELECT></FORM>
+
+
+<form name="total">
+<INPUT TYPE="BUTTON" VALUE="Submit" onClick="quiz()"> <INPUT TYPE="button" VALUE="Reload Quiz" onClick='parent.location="javascript:location.reload()"'><BR><HR><BR>
+You got <INPUT TYPE="TEXT" NAME="score" VALUE="" SIZE=5> out of 
+<INPUT TYPE="TEXT" NAME="outof" VALUE="10" SIZE=5> correct.<BR><BR>
+Your Score: <INPUT TYPE="TEXT" NAME="percent" VALUE="" SIZE=3> %<BR><HR><BR><BR>
+</FORM>
+
+
+
+
+</body>
+</html>
