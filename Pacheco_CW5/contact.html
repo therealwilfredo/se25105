@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tank Dempsey</title>
+<link rel="stylesheet" type="text/css" href="blank.css">
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+<script>
+
+function check_info() {
+
+var firstname = document.getElementById('firstname').value;
+
+var lastname = document.getElementById('lastname').value;
+
+var username = document.getElementById('username').value;
+
+var email = document.getElementById('email').value;
+
+var emailconfirmation = document.getElementById('emailconfirmation').value;
+
+var Phone Number = document.getElementById('Phone Number').value;
+
+if (firtname=="" || lastname=="" || username=="" || email=="") {
+alert('must fill in all fields on form');
+return false;
+
+
+}
+else { 
+return true;
+
+
+}
+
+}
+
+</script>
+
+</head><!-- closes head -->
+
+
+<body>
+<div id="wrapper">
+<h2>Tank Dempsey</h2>
+
+
+<div id="social-icons">
+<a href="https://twitter.com/YOUR_USER_NAME"><img src="images/twitter-icon.png" width="48" height="48" alt="Twitter" /></a>
+<a href="http://feeds.feedburner.com/YOUR_FEED_URL"><img src="images/rss.png" width="48" height="48" alt="RSS" /></a>
+<a href="http://www.facebook.com/YOUR_FB_IDENTIFIER"><img src="images/facebook.ico" width="48" height="48" alt="Facebook" /></a>
+</div>
+
+<nav>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="bio.html">Bio</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="events.html">Events</a></li>
+  <li><a href="video.html">Video Page</a></li>
+</nav><!-- closes nav -->
+
+
+
+
+
+
+
+
+<h1>Tank Dempsey Bio</h1>
+ 
+
+
+
+<div id="wrapper-content">
+<div id="info">
+ <form action="thank-you.html" method="post" onsubmit="return check_info();">
+First Name  <input type="text" name="firstname" id="firstname"><br/>
+Last Name   <input type="text" name="lastname" id="lasttname"></br/>
+User Name  <input type="text" name="username" id="username"><br/>
+Email  <input type="text" name="email" id="email"><br/>
+Email Confirmation <input type="text" name="emailconfirmation" id="emailconfirmation"><br/>
+Phone Number  <input type="text" name="Phone Number" id="Phone Number"><br/>
+
+<input type="submit" value="submit"/>
+
+</div><!-- closes info-->
+</div><!-- closes wrapper-content  -->
+<footer>
+
+&copy; Copyright 2016 Dempsey
+
+</footer><!-- closes footer -->
+
+
+
+</div><!-- closes wrapper -->
+
+
+
+
+</body><!-- CLOSES BODY -->
+</html>

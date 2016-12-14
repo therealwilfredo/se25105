@@ -1,0 +1,117 @@
+/*   CSS   entire website   */
+.center {
+    margin: auto;
+    width: 100%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+ table {color:#941010;}
+
+/* css for the nav */
+nav {
+  
+   list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+	margin:auto;
+}
+h3{
+    background-color: #000000;
+    width: 150px;
+	height: 25px;
+    padding: 25px;
+    border: 25px #000000;
+    margin: 25px;
+}
+
+#social-icons {float:right;}
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover:not(.active) {
+    background-color: #000054;
+}
+
+.active {
+background-color:#000054;
+}
+
+h2 {color:#696B6F;}
+div {color:#696B6F;}
+
+
+/* css for the body */
+body  {
+background: url('images/earth.png') no-repeat center center fixed;
+background-size; cover;
+margin:auto; }
+
+/*css for the wrapper */
+#wrapper  { 
+width:900px; 
+height:2000x; 
+margin:auto;
+position:relative;}
+
+h3{
+    background-color: #000000;
+    height: 205px; 
+	width: 300px;
+    padding: 25px;
+    border: 25px #000000;
+    margin: 25px;
+}
+
+.class {float:right; margin:auto; }
+
+
+/*  CSS for Header  */
+header {width:980px; 
+height:400px; 
+ background-image: url('images/de.jpg');
+    background-repeat: no-repeat;
+     background-position: top center;
+margin:auto;	 }
+	
+.twitter-timeline {}
+
+/*  CSS  for Content  */
+
+.names {font-size:25px; color:#35940C; font-weight:800px;}
+
+#content {width:980px; height:425px; margin:auto;}
+
+.image {width:300px; height:300px; float:left; padding:10px 13px;   font-size:20px;}
+
+#wrapper-content {width:980px; height:600px; margin:auto;}
+#content-left {width:650px; height:500px; float:right; margin:auto; }
+#content-right {width:500px; height:375px; float:left; font-size:18px; padding:75px 10px 10px 10px; margin:auto;}
+
+#info {position:; font-size:200%;}
+
+	p {color:#AB0B0B; font-size:550%;}
+
+/*  CSS  for  Footer  */
+
+footer {
+position:absolute;
+margin:auto;
+width:980px;
+height:50px; 
+background-color:#000000; 
+color:#FFF;  
+text-align:center; 
+line-height:50px;
+bottom: 0;}
+
